@@ -10,15 +10,21 @@
     }
 
     body {
-      font-family: sans-serif;
-      background: black;
-      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 20px;
+      color: #cfd8ff;
       display: flex;
       flex-direction: row;
       gap: 20px;
       height: 100vh;
+
+      /* Çok katmanlı renk geçişleri, biraz doku ve karanlık */
+      background: 
+        radial-gradient(circle at 30% 30%, rgba(50,70,110,0.85), transparent 70%),
+        radial-gradient(circle at 70% 80%, rgba(20,30,60,0.9), transparent 60%),
+        linear-gradient(120deg, #0b1224, #1e2a55, #223a6f);
+      background-blend-mode: screen;
     }
 
     .left {
@@ -87,7 +93,6 @@
   <div class="right">
     <img src="resim1.jpg" alt="Fotoğraf 1" />
     <img src="resim2.jpg" alt="Fotoğraf 2" />
-    
   </div>
 
   <script>
